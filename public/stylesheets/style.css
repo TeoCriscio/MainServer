@@ -1,8 +1,202 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+/*NavbarAlta  container padre  */
+#navbarAlta{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 0;
+  font-family: MyLocalFont, sans-serif;
+  background-color: #010326;
+  grid-template-areas:
+    "navbarAlta-sx . navbarAlta-cx";
+
+}
+/* navbar ALta -sx container padre all'interno abbiamo datagoal*/
+.navbarAlta-sx{
+  grid-area: navbarAlta-sx;
+  text-align: start;
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+  align-content: center;
+  text-decoration: none;
+}
+/* stile della scritta datagoal*/
+.Datagoal{
+  padding-left:30px;
+  color: white;
+  text-decoration: none;
+}
+.Datagoal:hover{
+  color: #F26716;
+}
+/* navbarAlta-cx container padre all'interno searchbar */
+.navbarAlta-cx{
+  grid-area: navbarAlta-cx;
+  text-align: center;
+  padding: 10px;
+  align-content: center;
+}
+/* Stilizzazione del contenitore della search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a {
-  color: #00B7FF;
+/* Stilizzazione dell'input di ricerca */
+.search-input {
+  width: 60%; /* Adatta la larghezza secondo le tue esigenze */
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: MyLocalFont, sans-serif;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #F26716; /* Cambia il colore del bordo quando l'input è in focus */
+}
+
+
+
+
+/* Navbar bassa Container padre per gestire il grid template area*/
+#navbarBassa{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #F8CCAA;
+  grid-template-areas:
+    ". News Competizioni Squadre LogoNavbar Giocatori Chat AboutUs .";
+}
+/*Stile di news*/
+.News{
+  grid-area: News;
+  align-content: center;
+  text-align: center;
+}
+#News1{
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease, color 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+#News1:hover{
+  color: #F26716;
+  border-bottom-color: black;
+}
+/*Stile di Competizioni*/
+.Competizioni{
+  grid-area: Competizioni;
+  align-content: center;
+  text-align: center;
+}
+#Competizioni1{
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease, color 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+#Competizioni1:hover{
+  color: #F26716;
+  border-bottom-color: black;
+}
+/*Stile di Squadre*/
+.Squadre{
+  grid-area: Squadre;
+  align-content: center;
+  text-align: center;
+}
+#Squadre1{
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease, color 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+#Squadre1:hover{
+  color: #F26716;
+  border-bottom-color: black;
+}
+/*Stile di LogoNavbar*/
+.LogoNavbar{
+  padding:5px;
+  grid-area: LogoNavbar;
+  align-content: center;
+  text-align: center;
+}
+/* Stilizziamo direttamente l'elemento e non
+ il div contenente l'elemento per non avere problemi di dimensioni della navbar*/
+#LogoNavbar{
+  height: 55px;
+  width: auto;
+}
+/*Stile di Giocatori*/
+.Giocatori{
+  grid-area:Giocatori;
+  align-content: center;
+  text-align: center;
+}
+#Giocatori1{
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease, color 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+#Giocatori1:hover{
+  color: #F26716;
+  border-bottom-color: black;
+}
+/*Stile di Chat*/
+.Chat{
+  grid-area: Chat;
+  align-content: center;
+  text-align: center;
+}
+#Chat1{
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease, color 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+#Chat1:hover{
+  color: #F26716;
+  border-bottom-color: black;
+}
+/*Stile di About Us*/
+.AboutUs{
+  grid-area: AboutUs;
+  align-content: center;
+  text-align: center;
+}
+#About1{
+  text-decoration: none;
+  color: black;
+  transition: border-color 0.3s ease, color 0.3s;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+#About1:hover{
+  color: #F26716 ;
+  border-bottom-color: black;
+}
+@font-face {
+  font-family: 'MyLocalFont';
+  src: url('font/POLAROID.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
